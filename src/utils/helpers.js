@@ -1,10 +1,10 @@
 import { P_MARKETING, P_EQUIPMENT, L_BV, L_EENMANSZAK } from "./data";
 
 const validationMessages = {
-  product: "Please select the Product",
-  legal: "Please select the Legal",
-  amount: "Please select the Loan amount",
-  duration: "Please select the Loan duration",
+  product: "Bolån",
+  legal: "Stad",
+  amount: "Lånblopp",
+  duration: "Låntid",
 };
 
 export function getValidationMessage(field) {
@@ -15,26 +15,26 @@ const MaxValuesConfig = [
   {
     product: P_MARKETING,
     legal: L_BV,
-    maxAmount: 250000,
-    maxDuration: 36,
+    maxAmount: 200000,
+    maxDuration: 12,
   },
   {
     product: P_MARKETING,
     legal: L_EENMANSZAK,
-    maxAmount: 250000,
-    maxDuration: 36,
+    maxAmount: 100000,
+    maxDuration: 12,
   },
   {
     product: P_EQUIPMENT,
     legal: L_BV,
-    maxAmount: 500000,
-    maxDuration: 60,
+    maxAmount: 50000,
+    maxDuration: 12,
   },
   {
     product: P_EQUIPMENT,
     legal: L_EENMANSZAK,
     maxAmount: 250000,
-    maxDuration: 60,
+    maxDuration: 10,
   },
 ];
 
