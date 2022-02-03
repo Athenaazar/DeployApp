@@ -130,9 +130,9 @@ const Slider = React.forwardRef((props, ref) => {
         <span>
           {"max: "}
           {type === "amount"
-            ? new Intl.NumberFormat("nl-NL", {
+            ? new Intl.NumberFormat("sk-SK", {
                 style: "currency",
-                currency: "EUR",
+                currency: "KRO",
                 maximumSignificantDigits: 2,
               }).format(max)
             : `${max} months`}
