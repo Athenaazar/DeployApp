@@ -2,6 +2,7 @@
   "name": "loan-calculator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Athenaazar.github.io/DeployApp",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -13,6 +14,8 @@
     "styled-components": "^5.2.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "prettier": "2.1.2"
   }
 }
