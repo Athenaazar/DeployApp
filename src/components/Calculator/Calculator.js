@@ -51,7 +51,7 @@ function Calculator(props) {
   useEffect(() => {
     setValidation("");
     setInterestRate("");
-  }, [product, legal, amount, duration]);
+  }, [Bolån, Övrigt, Blopp, Låntid]);
 
   useEffect(() => {
     const { maxAmount, maxDuration } = getMaxValues({
