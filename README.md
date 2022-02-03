@@ -28,8 +28,6 @@ I've checked the app for modern browsers, but because of styled-sliders it shoul
   <img src="https://github.com/foxxxyproxy/loan-calculator/blob/main/src/assets/screenshots/2-error.png" width="50%">
 </p>
 
-#### Calculated interest rate
+#### Calculated interest rate.
 
- <p align="center">
-  <img src="https://github.com/foxxxyproxy/loan-calculator/blob/main/src/assets/screenshots/3-interestRate.png" width="50%">
-</p>
+ 
