@@ -122,7 +122,7 @@ function Calculator(props) {
         <DropdownSection className="dropdown-wrapper">
           <Dropdown
             className="dropdown-wrapper__item"
-            type="product"
+            type="Ditt lån"
             value={product}
             onChange={(e) => setProduct(e.target.value)}
             options={options.product}
@@ -130,7 +130,7 @@ function Calculator(props) {
           />
           <Dropdown
             className="dropdown-wrapper__item"
-            type="legal"
+            type="Stad"
             value={legal}
             onChange={(e) => setLegal(e.target.value)}
             options={options.legal}
@@ -141,7 +141,7 @@ function Calculator(props) {
         <SliderSection className="slider-wrapper">
           <Slider
             className="slider-wrapper__item"
-            type="amount"
+            type="Blopp"
             value={amount}
             onChange={handleAmountChange}
             ref={amountRef}
@@ -152,7 +152,7 @@ function Calculator(props) {
 
           <Slider
             className="slider-wrapper__item"
-            type="duration"
+            type="dLåntid"
             value={duration}
             onChange={handleDurationChange}
             ref={durationRef}
@@ -163,11 +163,11 @@ function Calculator(props) {
         </SliderSection>
 
         {validation ? (
-          <FormButton error type="submit" data-testid="button-error">
+          <FormButton error type="Skicka ansökan" data-testid="button-error">
             {validation}
           </FormButton>
         ) : (
-          <FormButton type="submit" data-testid="button-submit">
+          <FormButton type="Skicka ansökan" data-testid="button-submit">
             {interestRate
               ? `Your interest rate: ${interestRate}%`
               : "Get offer"}
