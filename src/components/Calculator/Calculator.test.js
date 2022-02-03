@@ -81,7 +81,7 @@ it("on Submit all selected data - no Error", () => {
   const productSelect = container.querySelectorAll("select")[0];
   const legalSelect = container.querySelectorAll("select")[1];
 
-  expect(button.innerHTML).toBe("Get offer");
+  expect(button.innerHTML).toBe("Få Svar");
   expect(container.querySelector("[data-testid='button-error']")).toBe(null);
 
   userEvent.selectOptions(productSelect, ["Equipment"]);
