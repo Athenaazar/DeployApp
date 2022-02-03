@@ -123,9 +123,9 @@ function Calculator(props) {
           <Dropdown
             className="dropdown-wrapper__item"
             type="Ditt lån"
-            value={product}
+            value={Ditt lån}
             onChange={(e) => setProduct(e.target.value)}
-            options={options.product}
+            options={options.Ditt lån}
             ref={productRef}
           />
           <Dropdown
@@ -133,7 +133,7 @@ function Calculator(props) {
             type="Stad"
             value={legal}
             onChange={(e) => setLegal(e.target.value)}
-            options={options.legal}
+            options={options.Stad}
             ref={legalRef}
           />
         </DropdownSection>
@@ -142,7 +142,7 @@ function Calculator(props) {
           <Slider
             className="slider-wrapper__item"
             type="Blopp"
-            value={amount}
+            value={Blopp}
             onChange={handleAmountChange}
             ref={amountRef}
             min={MIN_AMOUNT}
@@ -152,8 +152,8 @@ function Calculator(props) {
 
           <Slider
             className="slider-wrapper__item"
-            type="dLåntid"
-            value={duration}
+            type="Låntid"
+            value={Låntid}
             onChange={handleDurationChange}
             ref={durationRef}
             min={MIN_DURATION}
@@ -170,7 +170,7 @@ function Calculator(props) {
           <FormButton type="Skicka ansökan" data-testid="button-submit">
             {interestRate
               ? `Your interest rate: ${interestRate}%`
-              : "Get offer"}
+              : "Skicka ansökan"}
           </FormButton>
         )}
       </Form>
